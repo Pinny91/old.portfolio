@@ -115,6 +115,7 @@ li a:hover {
   color: #F5DA81;
   text-align: center;
   border-bottom: solid #086A87;
+  width: 100%;
 }
 #index-list {
   text-align: center;
