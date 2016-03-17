@@ -7,10 +7,10 @@ Menu hiden als het scherm groot genoeg is.
 */
 }
 /* Alle opmaak Groot scherm*/
-@media screen and (min-width: 761px) {
+@media screen and (min-width: 861px) {
   #nav-bar {
     width: 15%;
-    max-width: 150px;
+    max-width: 125px;
     height: 100%;
     position: fixed;
     right: 0;
@@ -47,7 +47,9 @@ Menu hiden als het scherm groot genoeg is.
   text-align: center;
   width: 100%;
   z-index: 75;
+  min-height: 68px;
 }
+
 #index-list {
   text-align: center;
 }
@@ -105,13 +107,13 @@ h1 {
 }
 #music-sectie{
 	background-image: url("music-back-color.png"); 
-	background-size:  85% 650px;
+	background-size:  100% 650px;
 	background-repeat: no-repeat;
 }
 
 
 /*Reactive elements*/
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 860px) {
   #nav-bar {
     position: relative;
     display: inline-block;
@@ -120,6 +122,10 @@ h1 {
     display: none;
   }
 
+  #img-header {
+	min-height: 68px;
+}
+  
 .nav-link {
     background-color: #086A87;
     border-radius: 5px;
@@ -168,6 +174,10 @@ h1 {
     color: #F2F5A9;;
     font-size: 20px;
     transition: color linear 0.15s;
+  }
+  #nav-list > ul.open {
+    display: block;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
   #small-menu:hover, #small-menu.active {
     text-decoration: none;
