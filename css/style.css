@@ -15,8 +15,8 @@ Menu hiden als het scherm groot genoeg is.
     position: fixed;
     right: 0;
     overflow: auto;
-    background-color: #086A87;
-    border-left: solid #086A87;
+    background-color: #0489B1;
+    /*border-left: solid #086A87;*/
   }
   #nav-list {
     position: fixed;
@@ -42,7 +42,7 @@ Menu hiden als het scherm groot genoeg is.
 }
 
 #header {
-  background-color: #086A87;
+  background-color: #0489B1;
   color: #F5DA81;
   text-align: center;
   width: 100%;
@@ -73,21 +73,23 @@ section {
   background-color: green;
 }
 .blok {
-  border-bottom: solid #086A87;
+  /*border-bottom: solid #086A87;*/
   padding: 1%;
   padding-right:15%;
   min-height: 200px;
-  height: 100%;
   padding-left: 50px;
 }
-h1 {
-    text-align: left;
+
+.no-background {
+	background-color: transparent;
 }
 
 .social-link {
 	display: block;
 	padding: 4px 4px 4px 4px;
 	text-decoration: none;
+	background-color: #0489B1;
+	border-radius: 5px;
 }
 .social-link:hover {
 	background-color: #58ACFA;
@@ -105,13 +107,36 @@ h1 {
 	z-index: 100;
 	
 }
-#music-sectie{
-	background-image: url("music-back-color.png"); 
-	background-size:  100% 650px;
-	background-repeat: no-repeat;
+
+
+#info-sectie{
+	background: url("music-back-color.jpg") no-repeat center center fixed; 
+	background-size:  cover;
+	height: 735px;
 }
-
-
+#projects-sectie{
+	background: url("projects-back.jpg") no-repeat center center fixed; 
+	background-size:  cover;
+	height: 735px;
+}
+#music-sectie{
+	background: url("music-back-color.jpg") no-repeat center center fixed; 
+	background-size:  cover;
+	height: 735px;
+}
+.right-side {
+	float: right;
+}
+.title {
+	background-color: #01A9DB;
+	border-radius: 5px;
+	padding: 10px 4px 10px 4px;
+	box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.15);
+	
+	text-align: center;
+	color: white;
+	
+}
 /*Reactive elements*/
 @media screen and (max-width: 860px) {
   #nav-bar {
@@ -127,7 +152,7 @@ h1 {
 }
   
 .nav-link {
-    background-color: #086A87;
+    background-color: #0489B1;
     border-radius: 5px;
     background-position: left top;
     background-repeat: repeat;
@@ -136,7 +161,7 @@ h1 {
   }
 .nav-link:hover {
     background-color: #F2F5A9;
-    color: #086A87;
+    color: #0489B1;
     border-radius: 5px;
     background-position: left top;
     background-repeat: repeat;
@@ -144,10 +169,13 @@ h1 {
   }
 .social-link {
 	border-radius: 5px;
-	background-color: #086A87;
+	background-color: #0489B1;
   }
   #social-bar{
 	  	top: 75%;
+  }
+  #social-bar li{
+	  	margin-bottom: 5px;
   }
   #nav-bar {
     width: 100px;
@@ -169,7 +197,7 @@ h1 {
     display: inline-block;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
     border-radius: 3px;
-    background: #086A87;
+    background: #0489B1;
     text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
     color: #F2F5A9;;
     font-size: 20px;
