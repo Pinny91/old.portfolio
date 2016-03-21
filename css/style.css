@@ -87,9 +87,6 @@ h1 {
 
 }
 
-
-
-
 #header {
   background-color: #0489B1;
   color: #F5DA81;
@@ -138,7 +135,6 @@ h1 {
 	font-size: 2em; 
 	text-shadow: 1px 1px 1px #082b34; 
 }
-
 #social-bar{
     position: fixed;
     text-align: center;
@@ -170,10 +166,6 @@ h1 {
 
 /*Reactive elements*/
 @media screen and (max-width: 860px) {
-  #nav-bar {
-    position: relative;
-    display: inline-block;
-  }
   #nav-bar ul.active {
     display: none;
   }
@@ -204,7 +196,7 @@ h1 {
   #social-bar li{
 	  	margin-bottom: 5px;
   }
-  #nav-bar {
+  #nav-list ul {
     width: 100px;
     max-width: 100px;
     position: fixed;
