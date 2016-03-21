@@ -1,4 +1,9 @@
-/*BEGIN SIDEBAR CODE */
+/*TEKST ADJUST CODE*/
+@media all and (min-width: 50px)   {  body  { font-size:1.0em;  } }
+@media all and (min-width: 400px)  {  body  { font-size:1.2em;  } }
+@media all and (min-width: 700px)  {  body  { font-size:1.4em;  } }
+
+/*BEGIN/*BEGIN SIDEBAR CODE */
 /* toggle voor de menu*/
 #small-menu {
   display: none;
@@ -9,8 +14,8 @@ Menu hiden als het scherm groot genoeg is.
 /* Alle opmaak Groot scherm*/
 @media screen and (min-width: 861px) {
   #nav-bar {
-    width: 15%;
-    max-width: 125px;
+    width: 10%;
+    max-width: 100px;
     height: 100%;
     position: fixed;
     right: 0;
@@ -29,7 +34,9 @@ Menu hiden als het scherm groot genoeg is.
   }
 }
 .nav-link {
+  font-family: 'Josefin Slab', serif;
   text-align: left;
+  font-size: 1.0em;
   display: block;
   color: #F2F5A9;
   padding: 8px 0 8px 16px;
@@ -41,48 +48,25 @@ Menu hiden als het scherm groot genoeg is.
   text-decoration: none;
 }
 
-#header {
-  background-color: #0489B1;
-  color: #F5DA81;
-  text-align: center;
-  width: 100%;
-  z-index: 75;
-  min-height: 68px;
-}
-
-#index-list {
-  text-align: center;
-}
-#head-name {
-  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-  font-size: 40px;
-  font-style: italic;
-  font-variant: small-caps;
-  font-weight: 100;
-  line-height: 44px;
-}
 
 section {
+	font-size: 1em;
+	color: white;
 }
-#white-border {
-  position: relative;
-  float: left;
-  height: 100%;
-  width: 30%;
-  /*z-index: -1;*/
-  background-color: green;
-}
+
 .blok {
   /*border-bottom: solid #086A87;*/
   padding: 1%;
   padding-right:15%;
   min-height: 200px;
+  height: auto;
   padding-left: 50px;
 }
 
 .no-background {
 	background-color: transparent;
 }
+
 
 .social-link {
 	display: block;
@@ -98,45 +82,92 @@ section {
 	border-radius: 5px;
 	padding-top: 5px;
 }
+
+h1 {
+
+}
+
+
+
+
+#header {
+  background-color: #0489B1;
+  color: #F5DA81;
+  text-align: center;
+  width: 100%;
+  z-index: 75;
+  min-height: 30px;
+  max-height: 90px;
+  }
+#img-header {
+	min-height: 30px;
+	max-height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #0489B1;
+}
+#header-title {
+	min-height: 30px;	
+	max-height: 50px;
+	margin: 0;
+	padding-top: 5px;
+	background-color: #0489B1;
+	color: #FFE4AB; 
+	font-family: 'Tangerine', serif;
+	font-size: 3.5em; 
+	font-weight: normal; 
+	line-height: 48px; 
+	text-align: center; 
+	text-shadow: 4px 4px 4px #aaa;
+	
+}
+
+/*Blokken*/
+
+.title {
+	background-color: #01A9DB; /*back-up is opacity isn't supported*/
+	background-color: rgba(1, 169, 219, 0.8);
+
+	border-radius: 5px;
+	padding: 10px 4px 10px 4px;
+	box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.15);
+	
+	text-align: center; 
+	color: #F5F7B8; 
+	font-family: 'Josefin Slab', serif;
+	font-size: 2em; 
+	text-shadow: 1px 1px 1px #082b34; 
+}
+
 #social-bar{
     position: fixed;
     text-align: center;
     top: 90%;
     margin-top: -100px;
+	right: 2.5%;
     list-style-type: none;	
 	z-index: 100;
 	
 }
-
-
 #info-sectie{
-	background: url("music-back-color.jpg") no-repeat center center fixed; 
+	background: url("music-back-color.jpg") no-repeat left center fixed; 
 	background-size:  cover;
-	height: 735px;
+	height: auto;
 }
 #projects-sectie{
-	background: url("projects-back.jpg") no-repeat center center fixed; 
+	background: url("projects-back.jpg") no-repeat left center fixed; 
 	background-size:  cover;
-	height: 735px;
+	height: auto;
 }
 #music-sectie{
 	background: url("music-back-color.jpg") no-repeat center center fixed; 
 	background-size:  cover;
-	height: 735px;
+	height: auto;
 }
 .right-side {
 	float: right;
 }
-.title {
-	background-color: #01A9DB;
-	border-radius: 5px;
-	padding: 10px 4px 10px 4px;
-	box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.15);
-	
-	text-align: center;
-	color: white;
-	
-}
+
 /*Reactive elements*/
 @media screen and (max-width: 860px) {
   #nav-bar {
@@ -146,10 +177,6 @@ section {
   #nav-bar ul.active {
     display: none;
   }
-
-  #img-header {
-	min-height: 68px;
-}
   
 .nav-link {
     background-color: #0489B1;
@@ -182,16 +209,17 @@ section {
     max-width: 100px;
     position: fixed;
     right: 10px;
-    top: 75px;
+    top: 50px;
     overflow: auto;
     z-index: 100;
 
   }
+ 
   #small-menu {
 	cursor: pointer;
 	text-decoration: none;
     position: fixed;
-    padding: 20px;
+    padding: 11px;
     right: 0;
     top: 0;
     display: inline-block;
@@ -199,7 +227,7 @@ section {
     border-radius: 3px;
     background: #0489B1;
     text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
-    color: #F2F5A9;;
+    color: #F2F5A9;
     font-size: 20px;
     transition: color linear 0.15s;
   }
