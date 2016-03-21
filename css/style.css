@@ -166,11 +166,77 @@ h1 {
 
 /*Reactive elements*/
 @media screen and (max-width: 860px) {
-  #nav-bar ul.active {
+	#nav-bar ul.active {
     display: none;
   }
-  
-.nav-link {
+	.nav-link {
+		background-color: #0489B1;
+		border-radius: 5px;
+		background-position: left top;
+		background-repeat: repeat;
+		box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.15);
+		z-index: 100;
+  }
+	.nav-link:hover {
+		background-color: #F2F5A9;
+		color: #0489B1;
+		border-radius: 5px;
+		background-position: left top;
+		background-repeat: repeat;
+    
+  }
+	.social-link {
+		border-radius: 5px;
+		background-color: #0489B1;
+  }
+	#social-bar{
+	  	top: 75%;
+  }
+	#social-bar li{
+	  	margin-bottom: 5px;
+  }
+	#nav-list ul {
+		width: 100px;
+		max-width: 100px;
+		position: fixed;
+		right: 10px;
+		top: 50px;
+		overflow: auto;
+		z-index: 100;
+
+  }
+	#small-menu {
+		cursor: pointer;
+		text-decoration: none;
+		position: fixed;
+		padding: 11px;
+		right: 0;
+		top: 0;
+		display: inline-block;
+		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+		border-radius: 3px;
+		background: #0489B1;
+		text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+		color: #F2F5A9;
+		font-size: 20px;
+		transition: color linear 0.15s;
+	}
+	#nav-list > ul.open {
+		display: block;
+		border-top: 1px solid rgba(0, 0, 0, 0.1);
+	}
+	#small-menu:hover, #small-menu.active {
+		text-decoration: none;
+		color: #66a992;
+	}
+}
+
+@media only screen and (min-resolution: 117dpi) and (max-resolution: 119dpi), only screen and (min-resolution: 131dpi) and (max-resolution: 133dpi), only screen and (min-resolution: 145dpi) and (max-resolution: 154dpi), only screen and (min-resolution: 162dpi) and (max-resolution: 164dpi), only screen and (min-resolution: 169dpi) {
+  /* Your touch-specific css goes here */
+	#nav-bar ul.active {
+    display: none;
+  }
+	.nav-link {
     background-color: #0489B1;
     border-radius: 5px;
     background-position: left top;
@@ -178,7 +244,7 @@ h1 {
     box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.15);
     z-index: 100;
   }
-.nav-link:hover {
+	.nav-link:hover {
     background-color: #F2F5A9;
     color: #0489B1;
     border-radius: 5px;
@@ -186,69 +252,42 @@ h1 {
     background-repeat: repeat;
     
   }
-.social-link {
+	.social-link {
 	border-radius: 5px;
 	background-color: #0489B1;
   }
-  #social-bar{
+	#social-bar{
 	  	top: 75%;
   }
-  #social-bar li{
+	#social-bar li{
 	  	margin-bottom: 5px;
+	}
+	#nav-list ul {
+		width: 100px;
+		max-width: 100px;
+		position: fixed;
+		right: 10px;
+		top: 50px;
+		overflow: auto;
+		z-index: 100;
   }
-  #nav-list ul {
-    width: 100px;
-    max-width: 100px;
-    position: fixed;
-    right: 10px;
-    top: 50px;
-    overflow: auto;
-    z-index: 100;
-
-  }
- 
-  #small-menu {
-	cursor: pointer;
-	text-decoration: none;
-    position: fixed;
-    padding: 11px;
-    right: 0;
-    top: 0;
-    display: inline-block;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
-    border-radius: 3px;
-    background: #0489B1;
-    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
-    color: #F2F5A9;
-    font-size: 20px;
-    transition: color linear 0.15s;
-  }
-  #nav-list > ul.open {
-    display: block;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-  }
-  #small-menu:hover, #small-menu.active {
-    text-decoration: none;
-    color: #66a992;
-  }
-}
-
-@media only screen and (min-resolution: 117dpi) and (max-resolution: 119dpi), only screen and (min-resolution: 131dpi) and (max-resolution: 133dpi), only screen and (min-resolution: 145dpi) and (max-resolution: 154dpi), only screen and (min-resolution: 162dpi) and (max-resolution: 164dpi), only screen and (min-resolution: 169dpi) {
-  /* Your touch-specific css goes here */
-#small-menu {
-	text-decoration: none;
-    position: fixed;
-    padding: 11px;
-    right: 0;
-    top: 0;
-    display: inline-block;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
-    border-radius: 3px;
-    background: red;
-    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
-    color: #F2F5A9;
-    font-size: 20px;
-    transition: color linear 0.15s;
-  }
+	#small-menu {
+		text-decoration: none;
+		position: fixed;
+		padding: 11px;
+		right: 0;
+		top: 0;
+		display: inline-block;
+		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+		border-radius: 3px;
+		background: #0489B1;
+		text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+		color: #F2F5A9;
+		font-size: 20px;
+		transition: color linear 0.15s;
+	}
+    #nav-list > ul.open {
+		display: block;
+		border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 /*EINDE SIDEBAR CODE*/
