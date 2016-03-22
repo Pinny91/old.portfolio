@@ -262,7 +262,7 @@ img {
   }
 	#social-bar{
 	  	top: 75%;
-		width: 30px;
+		width: 40px;
 		right: 5px;
   }
 	#social-bar li{
@@ -312,31 +312,31 @@ img {
     display: none;
   }
 	.nav-link {
-    background-color: #0489B1;
-    border-radius: 5px;
-    background-position: left top;
-    background-repeat: repeat;
-    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.15);
+		background-color: #0489B1;
+		border-radius: 5px;
+		background-position: left top;
+		background-repeat: repeat;
+		box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.15);
   }
 	.nav-link:hover {
-    background-color: #F2F5A9;
-    color: #0489B1;
-    border-radius: 5px;
-    background-position: left top;
-    background-repeat: repeat;
-    
+		background-color: #F2F5A9;
+		color: #0489B1;
+		border-radius: 5px;
+		background-position: left top;
+		background-repeat: repeat; 
   }
 	.social-link {
-	border-radius: 5px;
-	background-color: #0489B1;
+		border-radius: 5px;
+		background-color: #0489B1;
   }
 	#social-bar{
 	  	top: 75%;
-		width: 30px;
+		width: 40px;
+		right: 5px;
   }
 	#social-bar li{
 	  	margin-bottom: 5px;
-	}
+  }
 	#nav-list ul {
 		width: 100px;
 		max-width: 100px;
@@ -344,8 +344,10 @@ img {
 		right: 10px;
 		top: 50px;
 		overflow: auto;
+		z-index: 999;
   }
 	#small-menu {
+		cursor: pointer;
 		text-decoration: none;
 		position: fixed;
 		padding: 11px;
@@ -360,11 +362,18 @@ img {
 		font-size: 20px;
 		transition: color linear 0.15s;
 	}
-    #nav-list > ul.open {
+	#nav-list > ul.open {
 		display: block;
 		border-top: 1px solid rgba(0, 0, 0, 0.1);
+	}
+	#small-menu:hover, #small-menu.active {
+		text-decoration: none;
+		color: #66a992;
+	}
+	#small-menu {
+		z-index: 100;
+	}
 }
-
 /*EINDE SIDEBAR CODE*/
 
 /*TEKST ADJUST CODE*/
