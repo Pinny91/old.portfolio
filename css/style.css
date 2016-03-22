@@ -1,7 +1,19 @@
 /*TEKST ADJUST CODE*/
-@media all and (min-width: 50px)   {  body  { font-size:1.0em;  } }
-@media all and (min-width: 400px)  {  body  { font-size:1.2em;  } }
-@media all and (min-width: 700px)  {  body  { font-size:1.4em;  } }
+@media all and (min-width: 50px)   {  
+	body  { font-size:1.0em;  } 
+}
+@media all and (min-width: 100px)   {  
+	body  { font-size:1.0em;  } 
+}
+@media all and (min-width: 200px)   {  
+	body  { font-size:1.0em;  } 
+}
+@media all and (min-width: 400px)  {  
+	body  { font-size:1.2em;  } 
+}
+@media all and (min-width: 700px)  {  
+	body  { font-size:1.4em;  } 
+}
 
 /*BEGIN/*BEGIN SIDEBAR CODE */
 /* toggle voor de menu*/
@@ -33,10 +45,12 @@ Menu hiden als het scherm groot genoeg is.
     max-width: 150px;    
   }
 }
+
+/*Gewone opmaak*/
 .nav-link {
   font-family: 'Josefin Slab', serif;
   text-align: left;
-  font-size: 1.0em;
+  font-size: 1.2em;
   display: block;
   color: #F2F5A9;
   padding: 8px 0 8px 16px;
@@ -48,10 +62,19 @@ Menu hiden als het scherm groot genoeg is.
   text-decoration: none;
 }
 
-
-section {
-	font-size: 1em;
+body{
+	/*nomale tekst voorwaarden*/
+	font-family: 'Play', Arial;
+	font-size: 1.2em;
+	font-weight: normal;
+    font-style: normal;
 	color: white;
+}
+section {
+
+}
+p {
+	font-size: 1.2em;
 }
 
 .blok {
@@ -62,12 +85,9 @@ section {
   height: auto;
   padding-left: 50px;
 }
-
 .no-background {
 	background-color: transparent;
 }
-
-
 .social-link {
 	display: block;
 	padding: 4px 4px 4px 4px;
@@ -83,18 +103,8 @@ section {
 	padding-top: 5px;
 }
 
-h1 {
-
-}
-
 #header {
-  background-color: #0489B1;
-  color: #F5DA81;
-  text-align: center;
-  width: 100%;
-  z-index: 75;
-  min-height: 30px;
-  max-height: 90px;
+	
   }
 #img-header {
 	min-height: 30px;
@@ -104,18 +114,22 @@ h1 {
 	background-color: #0489B1;
 }
 #header-title {
-	min-height: 30px;	
-	max-height: 50px;
-	margin: 0;
+	
+	background-color: #01A9DB; /*back-up is opacity isn't supported*/
+	background-color: rgba(1, 169, 219, 0.8);
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 	padding-top: 5px;
-	background-color: #0489B1;
+	top: 0;
+	
 	color: #FFE4AB; 
-	font-family: 'Tangerine', serif;
-	font-size: 3.5em; 
+	font-family: 'Josefin Slab', serif;
+	font-size: 3.0em; 
 	font-weight: normal; 
-	line-height: 48px; 
-	text-align: center; 
-	text-shadow: 4px 4px 4px #aaa;
+	
+	text-shadow: 1px 1px 1px #082b34; 
+	text-align: center;
+
 	
 }
 
@@ -142,10 +156,11 @@ h1 {
     margin-top: -100px;
 	right: 2.5%;
     list-style-type: none;	
-	z-index: 100;
+	z-index: 99;
 	
 }
 #info-sectie{
+	padding-top: 0;
 	background: url("music-back-color.jpg") no-repeat left center fixed; 
 	background-size:  cover;
 	height: auto;
@@ -164,6 +179,18 @@ h1 {
 	float: right;
 }
 
+
+/*PROJECTS*/
+.project-list li {
+	width: 15%;
+}
+.pr-tab.pr-hide {
+	display: none;
+}
+.pr-tab.pr-active {
+	display: block;
+}
+
 /*Reactive elements*/
 @media screen and (max-width: 860px) {
 	#nav-bar ul.active {
@@ -175,7 +202,6 @@ h1 {
 		background-position: left top;
 		background-repeat: repeat;
 		box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.15);
-		z-index: 100;
   }
 	.nav-link:hover {
 		background-color: #F2F5A9;
@@ -191,6 +217,8 @@ h1 {
   }
 	#social-bar{
 	  	top: 75%;
+		width: 30px;
+		right: 5px;
   }
 	#social-bar li{
 	  	margin-bottom: 5px;
@@ -202,8 +230,6 @@ h1 {
 		right: 10px;
 		top: 50px;
 		overflow: auto;
-		z-index: 100;
-
   }
 	#small-menu {
 		cursor: pointer;
@@ -229,6 +255,9 @@ h1 {
 		text-decoration: none;
 		color: #66a992;
 	}
+	#small-menu {
+		z-index: 100;
+	}
 }
 
 @media only screen and (min-resolution: 117dpi) and (max-resolution: 119dpi), only screen and (min-resolution: 131dpi) and (max-resolution: 133dpi), only screen and (min-resolution: 145dpi) and (max-resolution: 154dpi), only screen and (min-resolution: 162dpi) and (max-resolution: 164dpi), only screen and (min-resolution: 169dpi) {
@@ -242,7 +271,6 @@ h1 {
     background-position: left top;
     background-repeat: repeat;
     box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.15);
-    z-index: 100;
   }
 	.nav-link:hover {
     background-color: #F2F5A9;
@@ -258,6 +286,7 @@ h1 {
   }
 	#social-bar{
 	  	top: 75%;
+		width: 30px;
   }
 	#social-bar li{
 	  	margin-bottom: 5px;
@@ -269,7 +298,6 @@ h1 {
 		right: 10px;
 		top: 50px;
 		overflow: auto;
-		z-index: 100;
   }
 	#small-menu {
 		text-decoration: none;
@@ -290,4 +318,17 @@ h1 {
 		display: block;
 		border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
+
 /*EINDE SIDEBAR CODE*/
+
+/*TEKST ADJUST CODE*/
+@media all and (min-width: 50px)   {  
+	#header-title { font-size:1.5em; }
+	.title { font-size:1.5em; }
+}
+@media all and (min-width: 100px)   {  
+	#header-title { font-size:2.0em; }
+}
+@media all and (min-width: 200px)   {  
+	#header-title { font-size:2.5em; }
+}

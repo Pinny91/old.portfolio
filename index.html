@@ -8,8 +8,10 @@
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
     <link rel="stylesheet" href="css/style.css">
 	
-	<link href='https://fonts.googleapis.com/css?family=Tangerine:700' rel='stylesheet' type='text/css'>
+	<!--<link href='https://fonts.googleapis.com/css?family=Tangerine:700' rel='stylesheet' type='text/css'> -->
 	<link href='https://fonts.googleapis.com/css?family=Josefin+Slab:700' rel='stylesheet' type='text/css'>	
+	<link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+	
 	
 	</head>
 	
@@ -26,60 +28,100 @@
 				<a id="small-menu">&#9776;</a>
 			</div>
   	
-			<ul id="social-bar">
+			<ul class="list-unstyled" id="social-bar">
 				<li class="social-link"><a  href="https://github.com/pinny91"> <img src="pics/githubwhite.png" alt="GitHub"> </a> </li>
 				<li class="social-link"><a  href="http://www.freecodecamp.com/pinny91"><img src="pics/freecodelogowhite.png" alt="FreeCodeCamp"></a></li>
 				<li class="social-link"><a  href="https://be.linkedin.com/in/matthias-pinnewaert-655707105"><img src="pics/linkedin.png" alt="LinkedIn"></a></li>
 			</ul>
 		</nav>
-
-		<header id="header">
-			<!--
-			<img class="img-responsive" id="img-header" src="pics/header.jpg" alt="Responsive image">
-			MATTHIAS PINNEWAERT
-			-->
-			<p id="header-title">Matthias Pinnewaert</p>			
-		</header>
-	
 		<section class="blok" id="info-sectie">
-			<h1 class="title">About</h1> 
+			<header id="header">
+				<!--
+				<img class="img-responsive" id="img-header" src="pics/header.jpg" alt="Responsive image">
+				MATTHIAS PINNEWAERT
+				-->
+				<p id="header-title">Matthias Pinnewaert</p>			
+			</header>
 			<p>I'm Matthias Pinnewaert, 24 years old and bla bla bla</p>
 		</section>
 		<section class="blok" id="projects-sectie">
 			<h1 class="title">Projects</h1>
-			<p>-- Under Construction -- </p>
-			<div class="row">
-				<div class="col-xs-6 col-sm-4">
-					<a class="no-background thumbnail" href="#">
+			<ul class="project-list list-inline">
+				<li class="pr-active">
+					<a class="no-background thumbnail" href="#pr-tab1">
+						<img class="img-rounded" src="pics/telenet-app.png" alt="Test">
+					</a>
+				</li>
+				<li class="">
+					<a class="no-background thumbnail" href="#pr-tab2">
 						<img class="img-rounded" src="pics/test-screen.png" alt="Test">
 					</a>
-				</div>
-				<div class="col-xs-6 col-sm-4">
-					<a class="no-background thumbnail" href="#">
+				</li>
+				<li class="">
+					<a class="no-background thumbnail" href="#pr-tab3">
 						<img class="img-rounded" src="pics/test-screen.png" alt="Test">
 					</a>
-				</div>
-				<div class="col-xs-6 col-sm-4">
-					<a class="no-background thumbnail" href="#">
+				</li>
+				<li class="">
+					<a class="no-background thumbnail" href="#pr-tab4">
 						<img class="img-rounded" src="pics/test-screen.png" alt="Test">
 					</a>
-				</div>
-				<div class="col-xs-6 col-sm-4">
-					<a class="no-background thumbnail" href="#">
+				</li>
+				<li class="">
+					<a class="no-background thumbnail" href="#pr-tab5">
 						<img class="img-rounded" src="pics/test-screen.png" alt="Test">
 					</a>
-				</div>
-				<div class="col-xs-6 col-sm-4">
-					<a class="no-background thumbnail" href="#">
+				</li>
+				<li class="">
+					<a class="no-background thumbnail" href="#pr-tab6">
 						<img class="img-rounded" src="pics/test-screen.png" alt="Test">
 					</a>
-				</div>
-				<div class="col-xs-6 col-sm-4">
-					<a class="no-background thumbnail" href="#">
-						<img class="img-rounded" src="pics/test-screen.png" alt="Test">
-					</a>
+				</li>
+			</ul>
+			<div class="pr-tab pr-active" id="pr-tab1"> 
+				<div class="row">
+					<div class="col-xs-6">
+						<img class="img-responsive img-rounded" src="pics/telenet-app.png" alt="telenet-app">	
+					</div>
+					<div class="col-xs-6">
+						<h2>Small javavapplet, created with Processing</h2>
+						<p>
+						At my internship at Telenet I had to create an indicator device 
+						that would indicate the signalstrenght as a check-up for them updating 
+						their network.
+						As extention of my project, I made it so they could use an USB-connector 
+						so they could record their measurement using a serial connection.
+						To visualise it on PC I made an app using Processing.			
+						</p>
+					</div>
 				</div>
 			</div>
+			<div class="pr-tab pr-hide" id="pr-tab2"> 
+				<div>
+					<p>-- Under Construction -- (2)</p>
+				</div>
+			</div>			
+			<div class="pr-tab pr-hide" id="pr-tab3"> 
+				<div>
+					<p>-- Under Construction -- (3)</p>
+				</div>
+			</div>
+			<div class="pr-tab pr-hide" id="pr-tab4"> 
+				<div>
+					<p>-- Under Construction -- (4)</p>
+				</div>
+			</div>
+			<div class="pr-tab pr-hide" id="pr-tab5"> 
+				<div>
+					<p>-- Under Construction -- (5)</p>
+				</div>
+			</div>
+			<div class="pr-tab pr-hide" id="pr-tab6"> 
+				<div>
+					<p>-- Under Construction -- (6)</p>
+				</div>
+			</div>
+			
 		</section>
 	<!--<section class="blok row" id="art-sectie">
 			<h1 class="title">Art-work</h1> -- Under Construction --
