@@ -69,6 +69,9 @@ body{
 	font-weight: normal;
     font-style: normal;
 	color: white;
+	
+	/*Andere basis voorwaarden*/
+	z-index: 1;
 }
 section {
 
@@ -78,6 +81,9 @@ p {
 }
 h2 {
 	font-size: 1.5em;
+}
+img {
+	margin: 4px;
 }
 
 .blok {
@@ -136,6 +142,14 @@ h2 {
 	
 }
 
+.text-bubble{
+	background-color: #01A9DB; /*back-up is opacity isn't supported*/
+	background-color: rgba(1, 169, 219, 0.8);
+	box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.15);
+	border-radius: 15px;
+}
+
+
 /*Blokken*/
 
 .title {
@@ -182,11 +196,40 @@ h2 {
 	float: right;
 }
 
-
 /*PROJECTS*/
-.project-list li {
-	width: 15%;
+
+.project-list > li a img {
+	min-height: 50px;
+	min-width: 70px;
 }
+
+.project-list > li a {
+	min-height: 54px;
+	min-width: 80px;
+}
+
+@media (min-width: 992px){
+	.project-list {
+		width: 100%;
+	}
+	.project-list li {
+		display: inline-block;
+		padding-right: 30px;
+		padding-left: 5px;
+		width: 15%;
+	}
+}
+@media (max-width: 991px){
+	.project-list li {
+		display: block;
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+	.leftside-adjust {
+		left:85px;
+	}
+}
+
 .pr-tab.pr-hide {
 	display: none;
 }
@@ -211,8 +254,7 @@ h2 {
 		color: #0489B1;
 		border-radius: 5px;
 		background-position: left top;
-		background-repeat: repeat;
-    
+		background-repeat: repeat; 
   }
 	.social-link {
 		border-radius: 5px;
@@ -233,6 +275,7 @@ h2 {
 		right: 10px;
 		top: 50px;
 		overflow: auto;
+		z-index: 999;
   }
 	#small-menu {
 		cursor: pointer;
