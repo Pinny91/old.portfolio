@@ -1,52 +1,44 @@
 
 /*MENU FUNCTION*/
 jQuery(document).ready(function(){
-	var mouseClick = 0;
-	if (jQuery(window).width() < 860) {
-	jQuery("#small-menu").click(function() {
-		event.preventDefault();
-		jQuery("#small-menu").toggleClass("active");
-		jQuery("#nav-list ul").toggleClass("active");
-	});
+	if (jQuery(window).width() < 1165) {
+		jQuery("#small-menu").on('click', function() {
+			event.preventDefault();
+			jQuery("#small-menu").toggleClass("active");
+			jQuery("#nav-list ul").toggleClass("active");
+		});
+		jQuery('.nav-link').on('click' ,function(){
+			jQuery("#nav-list ul").addClass("active");
+			console.log("Test");
+		});
 	}
 	else {
-		jQuery("#small-menu").removeClass("active");
 		jQuery("#nav-list ul").removeClass("active");
 	}
 	jQuery(window).resize(function() {
-		if (jQuery(window).width() < 860) {
-			if(mouseClick == 0){
-			jQuery("#nav-list ul").addClass("active");				
-			}
-			jQuery("#small-menu").click(function() {
-				event.preventDefault();
-				if (mouseClick == 0){
-					jQuery("#nav-list ul").removeClass("active");
-					mouseClick = 1;
-				}
-				else if (mouseClick == 1){
-					jQuery("#nav-list ul").addClass("active");
-					mouseClick = 0;				
-				}
-				jQuery('.nav-link').click(function(){
-					jQuery("#nav-list ul").addClass("active");
-					mouseClick = 0;
-				});
+		if (jQuery(window).width() < 1165) {
+			jQuery("#nav-list ul").addClass("active");
+			console.log("size: " + jQuery(window).width());
+			
+			//When pressed on the menu icon -> open the menu, or close
+			jQuery("#small-menu").on('click', function() {
+				jQuery("#nav-list ul").toggleClass("active");
+				console.log("Open & toe");
+			});
+			
+			//When you clicked an element from the menu, it should close
+			jQuery('.nav-link').on('click' ,function(){
+				jQuery("#nav-list ul").addClass("active");
 				console.log("Test");
 			});
 		}
 		else {
-			jQuery("#small-menu").removeClass("active");
 			jQuery("#nav-list ul").removeClass("active");
 		}
 	});	
 });
 
 	/*PROJECTS FUNCTION*/
-	jQuery(window).resize(function() {
-		
-	});
-	
 	$(document).ready(function() {
 			$('.project-list > li > a').click(function(){
 			event.preventDefault();//stop browser to take action for clicked anchor
