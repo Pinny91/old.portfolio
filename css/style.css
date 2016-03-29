@@ -1,19 +1,4 @@
-/*TEKST ADJUST CODE*/
-@media all and (min-width: 50px)   {  
-	body  { font-size:1.0em;  } 
-}
-@media all and (min-width: 100px)   {  
-	body  { font-size:1.0em;  } 
-}
-@media all and (min-width: 200px)   {  
-	body  { font-size:1.0em;  } 
-}
-@media all and (min-width: 400px)  {  
-	body  { font-size:1.2em;  } 
-}
-@media all and (min-width: 700px)  {  
-	body  { font-size:1.4em;  } 
-}
+
 
 /*BEGIN/*BEGIN SIDEBAR CODE */
 /* toggle voor de menu*/
@@ -44,6 +29,7 @@ body{
 	font-weight: normal;
     font-style: normal;
 	color: white;
+	text-align: center;
 	
 	/*Andere basis voorwaarden*/
 	z-index: 1;
@@ -55,37 +41,55 @@ section {
 }
 p {
 	font-size: 1.2em;
+	max-width: 850px;
+	margin-left: auto;
+	margin-right: auto;
 }
 h2 {
 	font-size: 1.5em;
 }
+h3 {
+	font-size: 1.3em;
+}
+
 img {
 	margin: 4px;
 }
+a {
+	text-decoration: none;
+	color: white;
+}
+
+
+
 
 .blok {
   padding: 1px;
   margin: 0;
-  min-height: 200px;
+  height: auto;
+  min-height: 250px;
   height: auto;
   padding-left: 50px;
-  
+  padding-bottom: 10px;
 }
 .no-background {
 	background-color: transparent;
 }
-.social-link {
+.social-link, .music-social-link {
 	display: block;
 	padding: 4px 4px 4px 4px;
 	text-decoration: none;
 	border-radius: 5px;
 }
-.social-link:hover {
+.music-social-link {
+	background-color: #0489B1;
+}
+
+.social-link:hover, .music-social-link:hover{
 	background-color: #58ACFA;
 	color: #086A87;
 	text-decoration: none;
 	border-radius: 5px;
-	padding-top: 5px;
 }
 
 #header {
@@ -117,27 +121,17 @@ img {
 	
 	text-shadow: 1px 1px 1px #082b34; 
 	text-align: center;
-
-	
 }
-
-.text-bubble{
-	background-color: #01A9DB; /*back-up is opacity isn't supported*/
-	background-color: rgba(1, 169, 219, 0.8);
-	box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.15);
-	border-radius: 15px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-/*Blokken*/
-
 .title {
 	background-color: #01A9DB; /*back-up is opacity isn't supported*/
 	background-color: rgba(1, 169, 219, 0.8);
 
 	border-radius: 5px;
 	padding: 10px 4px 10px 4px;
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	
 	box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.15);
 	
 	text-align: center; 
@@ -146,6 +140,22 @@ img {
 	font-size: 2em; 
 	text-shadow: 1px 1px 1px #082b34; 
 }
+.text-bubble{
+	background-color: #01A9DB; /*back-up when opacity isn't supported*/
+	background-color: rgba(1, 169, 219, 0.5);
+	box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.15);
+	border-radius: 15px;
+	padding: 7px;
+	margin: 3px;
+	
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Blokken*/
+
+
 #social-bar{
     position: fixed;
     text-align: center;
@@ -153,28 +163,50 @@ img {
 	right: 23px;
     list-style-type: none;	
 	z-index: 99;
-	
 }
 #info-sectie{
 	padding-top: 0;
-	background: url("music-back-color.jpg") no-repeat left center fixed; 
+	background: url("back1.jpg") no-repeat left center fixed; 
 	background-size:  cover;
-	height: auto;
 }
 #projects-sectie{
-	background: url("projects-back.jpg") no-repeat left center fixed; 
+	background: url("back2.jpg") no-repeat left center fixed; 
 	background-size:  cover;
-	height: auto;
+}
+#about-sectie{
+	background: url("back1.jpg") no-repeat left center fixed; 
+	background-size:  cover;
 }
 #music-sectie{
-	background: url("music-back-color.jpg") no-repeat center center fixed; 
+	background: url("back2.jpg") no-repeat center center fixed; 
 	background-size:  cover;
-	height: auto;
 }
+
+
+/*INTRO SECTIE*/
+#img-small-me {
+	width: 20%;
+	max-width: 200px;
+	height: 20%;
+	max-height: 200px;
+	border-radius: 15px;
+} 
+#intro {
+	text-align: center;
+	text-shadow: 1px 1px 1px #082b34; 
+}
+
+
+
 .right-side {
 	float: right;
 }
-
+#margin-oto {
+	position: static;
+	max-width:850px;
+	margin-left: auto;
+	margin-right: auto;	
+}
 /*PROJECTS*/
 
 .project-list > li a img {
@@ -217,7 +249,78 @@ img {
 	}
 }
 
-/*MENU*/
+
+
+/*ABOUT*/
+#timeline {
+	position: static;
+	margin-left: auto;
+	margin-right: auto;	
+	background-image: url("timeline.png");
+	background-repeat: no-repeat;
+    background-position: center center;
+}
+.timeline-block {
+	position: relative;
+	box-sizing: border-box;
+	max-width: 200px;
+	width: 25%;
+	height:175px;	
+	float: left;
+}
+#ck{
+	background-color: rgb(31, 130, 32);
+	background-color: rgba(31, 130, 32, 0.8);
+}
+#cl {
+	background-color: rgb(185, 199, 44);
+	background-color: rgba(185, 199, 44, 0.8);
+}
+#fl{
+	background-color: rgb(199, 135, 43);
+	background-color: rgba(199, 135, 43, 0.8);	
+}
+#ffl{
+	background-color: rgb(160, 42, 153);
+	background-color: rgba(160, 42, 153, 0.8);
+}
+@media screen and (min-width: 935px){
+	#timeline {
+		width:850px;
+	}
+}
+
+@media screen and (max-width: 935px) {
+	.timeline-block {
+		width: 23%;
+	}
+}
+@media screen and (max-width: 720px) {
+	.timeline-block {
+		width: 50%;
+	}
+}
+@media screen and (max-width: 515px) {
+	#timeline {
+		background-image: url("timeline-down.png");
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	.timeline-block {
+		max-width: 450px;
+		width: 100%;
+	}
+}
+
+/*MUSIC*/
+#soundcloud {
+	max-width: 900px;	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
 /*GROOTSCHERM*/
 @media screen and (min-width: 1165px) {
 /* Menu hiden als het scherm groot genoeg is. */
@@ -409,10 +512,23 @@ img {
 @media all and (min-width: 50px)   {  
 	#header-title { font-size:1.5em; }
 	.title { font-size:1.5em; }
+	body  { font-size:1.0em;  } 
 }
 @media all and (min-width: 100px)   {  
+	body  { font-size:1.1em;  } 
 	#header-title { font-size:2.0em; }
 }
 @media all and (min-width: 200px)   {  
+	body  { font-size:1.0em;  } 
 	#header-title { font-size:2.0em; }
 }
+@media all and (min-width: 400px)  {  
+	body  { font-size:1.3em;  }
+	.title { font-size:2em; }
+	#header-title { font-size:2.5em;	}
+}
+@media all and (min-width: 700px)  {  
+	.title { font-size:2.5em; }
+	#header-title { font-size:3em; }
+	body  { font-size:1.3em;  } 
+}}

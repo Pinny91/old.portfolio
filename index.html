@@ -19,8 +19,8 @@
 			<div id="nav-list">
 				<ul class="list-unstyled active" id="navigator">
 					<li><a class="nav-link" href="#" role="button">Home</a></li>
-					<li><a class="nav-link" href="#info-sectie" role="button">About</a></li>
 					<li><a class="nav-link" href="#projects-sectie" role="button">Projects</a></li>
+					<li><a class="nav-link" href="#about-sectie" role="button">About</a></li>					
 					<li><a class="nav-link" href="#music-sectie" role="button">Music</a></li>
 					<!--<li><a class="nav-link" href="#art-sectie" role="button">Art</a></li>-->
 				</ul>
@@ -28,20 +28,20 @@
 			</div>
   	
 			<ul class="list-unstyled" id="social-bar">
-				<li class="social-link"><a  href="https://github.com/pinny91"> <img src="pics/githubwhite.png" alt="GitHub"> </a> </li>
-				<li class="social-link"><a  href="http://www.freecodecamp.com/pinny91"><img src="pics/freecodelogowhite.png" alt="FreeCodeCamp"></a></li>
-				<li class="social-link"><a  href="https://be.linkedin.com/in/matthias-pinnewaert-655707105"><img src="pics/linkedin.png" alt="LinkedIn"></a></li>
+				<li class="social-link"><a  href="https://github.com/pinny91" target="_blank"> <img src="pics/githubwhite.png" alt="GitHub"> </a> </li>
+				<li class="social-link"><a  href="http://www.freecodecamp.com/pinny91" target="_blank"><img src="pics/freecodelogowhite.png" alt="FreeCodeCamp"></a></li>
+				<li class="social-link"><a  href="https://be.linkedin.com/in/matthias-pinnewaert-655707105" target="_blank"><img src="pics/linkedin.png" alt="LinkedIn"></a></li>
 			</ul>
 		</nav>
 		<section class="blok" id="info-sectie">
 			<header id="header">
-				<!--
-				<img class="img-responsive" id="img-header" src="pics/header.jpg" alt="Responsive image">
-				MATTHIAS PINNEWAERT
-				-->
 				<p id="header-title">Matthias Pinnewaert</p>			
 			</header>
-			<p>I'm Matthias Pinnewaert, 24 years old and bla bla bla</p>
+			<div id="intro">
+			<img id="img-small-me" src="pics/smallPinny.jpg" alt="smallPinny">
+			<h2>I'm Matthias Pinnewaert, </h2>
+			<p>24 years old and upcoming junior front-end developer</p>
+			</div>
 		</section>
 		<section class="blok" id="projects-sectie">
 			<h1 class="title">Projects</h1>
@@ -50,12 +50,12 @@
 					<ul class="project-list list-unstyled">
 						<li class="pr-active">
 							<a class="no-background thumbnail" href="#pr-tab1">
-								<img class="img-rounded" src="pics/telenet-app.png" alt="Test">
+								<img class="img-rounded" src="pics/portfolio-proj.png" alt="Test">
 							</a>
 						</li>
 						<li class="">
 							<a class="no-background thumbnail" href="#pr-tab2">
-								<img class="img-rounded" src="pics/test-screen.png" alt="Test">
+								<img class="img-rounded" src="pics/telenet-app.png" alt="Test">
 							</a>
 						</li>
 						<li class="">
@@ -80,14 +80,33 @@
 						</li>
 					</ul>
 				</div>
-				<div class="leftside-adjust col-xs-10 col-sm-10 col-md-12">
-					<div class="row">
+				<div class="leftside-adjust col-xs-8 col-sm-8 col-md-12">
+					<div class="row" id="margin-oto">
 						<div class="pr-tab pr-active" id="pr-tab1"> 
-							<div class="col-lg-5 col-md-6 col-sm-10 col-xs-10">
+							<div class="text-bubble">
+							<h2>Portfolio</h2>
+							<p>
+								My first web related project was this portfolio, 
+								I will keep it up-to-date and will try to make 
+								it work on every device. In this project I learned 
+								a lot about web-development and really enjoyed doing so. 
+								In my portfolio I almost used everything I learned about 
+								HTML, CSS and JQuerry. The code might not be efficiënt but
+								that is because I didn’t really knew that much about it when 
+								I began making this and still learning about it.
+								I hope u like it and if you got any feedback please message me at 
+								<a href="mailto:pinnewaert.matthias@gmail.com" target="_top">pinnewaert.matthias@gmail.com</a>
+							</p>
+							</div>
+							
+							
+						</div>
+						<div class="pr-tab pr-hide" id="pr-tab2">
+							<div class="col-lg-6 col-md-5 col-sm-10 col-xs-10">
 								<img class="img-responsive img-rounded" src="pics/telenet-app.png" alt="telenet-app">	
 							</div>
-							<div class="text-bubble col-lg-5 col-md-6 col-sm-10 col-xs-10">
-								<h2>Small javavapplet, created with Processing</h2>
+							<div class="text-bubble col-lg-6 col-md-5 col-sm-10 col-xs-10">
+								<h2>Small java-applet, created with Processing</h2>
 								<p>
 								At my internship at Telenet I had to create an indicator device 
 								that would indicate the signalstrenght as a check-up for them updating 
@@ -96,11 +115,6 @@
 								to record their measurement using a serial connection.
 								To visualise it on PC I made an app using Processing.			
 								</p>
-							</div>
-						</div>
-						<div class="pr-tab pr-hide" id="pr-tab2"> 
-							<div>
-								<p>-- Under Construction -- (2)</p>
 							</div>
 						</div>			
 						<div class="pr-tab pr-hide" id="pr-tab3"> 
@@ -127,19 +141,83 @@
 				</div>
 			</div>
 		</section>
-	<!--<section class="blok row" id="art-sectie">
-			<h1 class="title">Art-work</h1> -- Under Construction --
-		</section>-->
+		<section class="blok" id="about-sectie">
+			<h1 class="title">Occupation</h1>
+			
+			<div class="text-bubble row">
+			<h2>About</h2>
+			<p>
+				I'm currently self-teaching myself to be a junior front-end developer currently enrolled as a camper at <a href="https://www.freecodecamp.com/" target="_blank">FreeCodeCamp</a>.<br>
+				My first programming experience was in college where I was learning C and later on some assembler and VHDL. 
+				I really enjoyed those classes and In the last year at my internship I had a bit of experience with java-app development 
+				in the form of Processing which I really enjoy doing so and ever since then I was (still am) looking for a job in app- or web development.
+			<p/>
+			<h3><a href="" target="_blank">CV</a></h3>
+			
+			</ul>
+			</div>
+			<div class="row" id="timeline">
+			<div id="ck" class="timeline-block text-bubble col-xs-10">
+			<h2>Current knowledge</h2> 
+			<ul>
+				<li>C</li>
+				<li>Arduino</li>
+				<li>Processing</li>
+			</ul>
+			</div>
+			<div id="cl" class="timeline-block text-bubble col-xs-10">
+			<h2>Currently learning</h2> 
+			<ul>
+				<li>PHP</li>
+				<li>mySQL</li>
+				<li>JQuery</li>
+				<li>CSS</li>
+				<li>HTML</li>
+				<li>Bootstrap</li>
+			</ul>
+			</div>
+			<div id="fl" class="timeline-block text-bubble col-xs-10">
+			<h2>Future learning</h2> 
+			<ul>
+				<li>Java</li>
+				<li> Android-apps</li>
+				<li>Ios-Apps</li>
+			</ul>
+			</div>
+			<div id="ffl" class="timeline-block text-bubble col-xs-10">
+			<h2>Far far future learning</h2> 
+			<ul>
+				<li>Photoshop</li>
+				<li> Illustrator</li>
+				<li>Video editing</li>
+			</ul>
+			</div>
+			</div>
+			<div class="text-bubble">
+			<h2>Contact</h2>
+			<p>Any questions, job-offers or advice don't hesitate to contact me!</p>
+			<ul class="list-inline">
+				<li class="social-link"><a  href="mailto:pinnewaert.matthias@gmail.com" target="_top"> <img src="pics/email.png" alt="Mail"> </a> </li>
+				<li class="social-link"><a  href="https://be.linkedin.com/in/matthias-pinnewaert-655707105" target="_blank"><img src="pics/linkedin.png" alt="LinkedIn"></a></li>
+			</ul>		
+				
+
+			</div>
+			</div>
+		</section>		
 		<section class="blok" id="music-sectie">
 			<h1 class="title">Music</h1>		
 			<ul class="list-inline right-side">
-				<li class="social-link"><a  href="https://www.facebook.com/djPinny/"><img src="pics/facebook.png" alt="Facebook"></a></li>
-				<li class="social-link"><a  href="https://twitter.com/"> <img src="pics/twitter.png" alt="Twitter"> </a> </li>
-				<li class="social-link"><a  href="https://soundcloud.com/pinny"><img src="pics/soundcloud.png" alt="SoundCloud"></a></li>
+				<li class="music-social-link"><a  href="https://www.facebook.com/djPinny/" target="_blank"><img src="pics/facebook.png" alt="Facebook"></a></li>
+				<li class="music-social-link"><a  href="https://twitter.com/" target="_blank"> <img src="pics/twitter.png" alt="Twitter"> </a> </li>
+				<li class="music-social-link"><a  href="https://soundcloud.com/pinny" target="_blank"><img src="pics/soundcloud.png" alt="SoundCloud"></a></li>
 			</ul>
-			<iframe width="80%" height="450" scrolling="yes" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/4683507&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+			<div id="soundcloud">
+			<iframe width="100%" height="450" scrolling="yes" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/4683507&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+			</div>
 		</section>
     	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>	
 		<script src="js/index.js"></script> 
+	
 	</body>
 </html>
