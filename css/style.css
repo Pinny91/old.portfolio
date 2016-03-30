@@ -270,6 +270,7 @@ a {
 }
 .timeline-block ul {
 	list-style-position: inside;
+	text-align: left;
 }
 #ck{
 	background-color: rgb(31, 130, 32);
