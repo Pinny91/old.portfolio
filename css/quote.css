@@ -1,6 +1,7 @@
 #quote-button-title {
 	margin-top: 0;
 	margin-bottom: 0;
+	font-size: 1.0em;
 }
 
 #quote-machine {
@@ -19,3 +20,17 @@
 #author {
 	text-align: right;
 }
+
+
+@media all and (min-width: 300px)   {  
+	#quote-button-title  { font-size:0.65em;  } 
+
+}
+@media all and (min-width: 400px)  {  
+	#quote-button-title  { font-size:1.1em;  } 
+
+}
+@media all and (min-width: 700px)  {  
+	#quote-button-title  { font-size:2em;  } 
+
+}}
