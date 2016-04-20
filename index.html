@@ -7,7 +7,7 @@
 		<title>Portfolio |Matthias Pinnewaert</title>
 		<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
 		<link rel="stylesheet" href="css/style.css">
-	
+		<link rel="stylesheet" href="css/quote.css">
 	<!-- Lettertypes -->
 		<link href='https://fonts.googleapis.com/css?family=Josefin+Slab:700' rel='stylesheet' type='text/css'>	
 		<link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
@@ -50,22 +50,22 @@
 					<ul class="project-list list-unstyled">
 						<li class="pr-active">
 							<a class="no-background thumbnail" href="#pr-tab1">
-								<img class="img-rounded" src="pics/portfolio-proj.png" alt="Test">
+								<img class="img-rounded" src="pics/portfolio-proj.png" alt="portoflio">
 							</a>
 						</li>
 						<li class="">
 							<a class="no-background thumbnail" href="#pr-tab2">
-								<img class="img-rounded" src="pics/telenet-app.png" alt="Test">
+								<img class="img-rounded" src="pics/telenet-app.png" alt="telenet-app">
 							</a>
 						</li>
 						<li class="">
 							<a class="no-background thumbnail" href="#pr-tab3">
-								<img class="img-rounded" src="pics/test-screen.png" alt="Test">
+								<img class="img-rounded" src="pics/selah-page.png" alt="selah-page">
 							</a>
 						</li>
 						<li class="">
 							<a class="no-background thumbnail" href="#pr-tab4">
-								<img class="img-rounded" src="pics/test-screen.png" alt="Test">
+								<img class="img-rounded" src="pics/quote-page.png" alt="quote-page">
 							</a>
 						</li>
 						<li class="">
@@ -119,13 +119,19 @@
 						</div>			
 						<div class="pr-tab pr-hide" id="pr-tab3"> 
 							<div>
-								<p>-- Under Construction -- (3)</p>
+								<!--
+								<p><a href="https://pinny91.github.io/selah" target="_blank">Click here</a></p>
+								-->
+								<p>Coming Soon...</p>
 							</div>
 						</div>
 						<div class="pr-tab pr-hide" id="pr-tab4"> 
-							<div>
-								<p>-- Under Construction -- (4)</p>
-							</div>
+							<div id="quote-machine" class="container">
+								<button class="btn btn-primary btn-lg btn-block" id="getQuote"> 
+									<h1 id="quote-button-title">Random Quote</h1>
+								</button>
+								<div id="quote-block" class=""></div>
+							</div>		
 						</div>
 						<div class="pr-tab pr-hide" id="pr-tab5"> 
 							<div>
@@ -219,6 +225,7 @@
 		</section>
     	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>	
 		<script src="js/index.js"></script> 
+		<script src="js/quote.js"></script> 
 	
 	</body>
 </html>
